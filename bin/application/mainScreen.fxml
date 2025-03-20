@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hmi.controller.MainScreenController">
+   <top>
+      <Pane prefHeight="130.0" prefWidth="900.0" style="-fx-background-color: gray;" BorderPane.alignment="CENTER">
+         <children>
+            <Label contentDisplay="CENTER" layoutX="380.0" layoutY="36.0" text="Dashboard" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="45.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </top>
+   <left>
+      <VBox prefHeight="520.0" prefWidth="200.0" style="-fx-border-color: black;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="manProduct" mnemonicParsing="false" onAction="#btnManProduct" prefHeight="54.0" prefWidth="202.0" text="manage product">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="manCategory" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnManCategory" prefHeight="54.0" prefWidth="202.0" text="manage category">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="manStock" layoutX="10.0" layoutY="64.0" mnemonicParsing="false" onAction="#btnManStock" prefHeight="54.0" prefWidth="202.0" text="manage stock">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="manDiscount" layoutX="10.0" layoutY="119.0" mnemonicParsing="false" onAction="#btnManDiscount" prefHeight="54.0" prefWidth="202.0" text="manage discount">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <BorderPane fx:id="borderPane" prefHeight="520.0" prefWidth="850.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
